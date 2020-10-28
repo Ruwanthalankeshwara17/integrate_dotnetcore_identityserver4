@@ -17,10 +17,17 @@
 Configure Identity Server
 
 Create new project using VisualStudio2019 IDE.
-![GitHub Logo](./images/create-project.jpg)
+
+![create-project](./images/create-project.jpg)
 
 Select Asp.Net Core Web Application
+
 ![select-webapp](./images/select-webapp.jpg)
 
 Give a name and select a location.After that select empty template and remove tick ‘Configure for HTTPS’.
+
 ![empty-template](./images/http-empty.jpg)
+
+Remove IIS profile from launchSettings.json file.
+
+![launch-settings](./images/launchsettings.jpg)
