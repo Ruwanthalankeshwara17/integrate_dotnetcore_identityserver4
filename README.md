@@ -12,5 +12,5 @@
 3. Run 'dotnet run --project ./Identity.csproj' or 'dotnet run'
 4. Open a browser and type 'http://localhost:5000'
 
-![GitHub Logo](./images/configure.png)
+![GitHub Logo](./images/configure.PNG)
 Format: ![Alt Text](url)
