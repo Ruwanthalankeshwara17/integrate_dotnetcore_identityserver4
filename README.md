@@ -31,3 +31,15 @@ Give a name and select a location.After that select empty template and remove ti
 Remove IIS profile from launchSettings.json file.
 
 ![launch-settings](./images/launchsettings.jpg)
+
+Install IdentityServer4 package
+
+After that installation, IdentityServer need to be added to application by modifying the ConfigureServices method in Startup.cs file.
+
+![launch-settings](./images/configureservice.PNG)
+
+Additionally, IdentityServer need to be added to the request pipeline by modifying the Configure method in Startup.cs file.
+
+![launch-settings](./images/configure.PNG)
+
+
