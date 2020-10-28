@@ -20,11 +20,11 @@ Create new project using VisualStudio2019 IDE.
 
 ![create-project](./images/create-project.jpg)
 
-Select Asp.Net Core Web Application
+Select Asp.Net Core Web Application.
 
 ![select-webapp](./images/select-webapp.jpg)
 
-Give a name and select a location.After that select empty template and remove tick ‘Configure for HTTPS’.
+Give a name and select a location. After that select empty template and remove tick ‘Configure for HTTPS’.
 
 ![empty-template](./images/http-empty.jpg)
 
@@ -32,7 +32,7 @@ Remove IIS profile from launchSettings.json file.
 
 ![launch-settings](./images/launchsettings.jpg)
 
-Install IdentityServer4 package
+Install IdentityServer4 package.
 
 After that installation, IdentityServer need to be added to application by modifying the ConfigureServices method in Startup.cs file.
 
@@ -41,5 +41,7 @@ After that installation, IdentityServer need to be added to application by modif
 Additionally, IdentityServer need to be added to the request pipeline by modifying the Configure method in Startup.cs file.
 
 ![launch-settings](./images/configure.PNG)
+
+Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Configuration.cs' inside that folder.
 
 
