@@ -2,5 +2,5 @@
 
 # Used Technologies
 
-1. .NetCore 3.1
+1. dotnetcore 3.1
 2. IdentityServer4
