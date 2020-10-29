@@ -48,7 +48,7 @@ Next step is to add configurations related to Users, Clients, IdentityResources 
 
 Now add Identity Resources.
 
-![identity-resources](./images/identityresources.PNG)
+![identity-resources](./images/identityserver4.PNG)
 
 Add Users.
 
@@ -58,11 +58,11 @@ Add client.
 
 ![client](./images/clients.PNG)
 
-In order to get rid of the errors, add following namespaces.
+Add following namespaces in-order to get rid of the errors.
 
-![client](./images/clients.PNG)
+![client](./images/using-config.PNG)
 
 After that we need to modify the ConfigureServices method in Startup.cs file.
 
-![client](./images/clients.PNG)
+![client](./images/configureservice-v2.PNG)
 
