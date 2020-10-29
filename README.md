@@ -34,6 +34,8 @@ Remove IIS profile from launchSettings.json file.
 
 Install IdentityServer4 package.
 
+![launch-settings](./images/launchsettings.jpg)
+
 After that installation, IdentityServer need to be added to application by modifying the ConfigureServices method in Startup.cs file.
 
 ![launch-settings](./images/configureservice.PNG)
@@ -46,16 +48,21 @@ Next step is to add configurations related to Users, Clients, IdentityResources 
 
 Now add Identity Resources.
 
-![identity-resources](./images/configure.PNG)
+![identity-resources](./images/identityresources.PNG)
 
 Add Users.
 
-![users](./images/configure.PNG)
+![users](./images/users.PNG)
 
 Add client.
 
-![client](./images/configure.PNG)
+![client](./images/clients.PNG)
 
+In order to get rid of the errors, add following namespaces.
 
+![client](./images/clients.PNG)
 
+After that we need to modify the ConfigureServices method in Startup.cs file.
+
+![client](./images/clients.PNG)
 
