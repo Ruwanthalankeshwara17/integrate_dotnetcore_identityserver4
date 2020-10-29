@@ -42,6 +42,20 @@ Additionally, IdentityServer need to be added to the request pipeline by modifyi
 
 ![launch-settings](./images/configure.PNG)
 
-Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Configuration.cs' inside that folder.
+Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Config.cs' inside that folder.
+
+Now add Identity Resources.
+
+![identity-resources](./images/configure.PNG)
+
+Add Users.
+
+![users](./images/configure.PNG)
+
+Add client.
+
+![client](./images/configure.PNG)
+
+
 
 
