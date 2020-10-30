@@ -1,4 +1,4 @@
-# Adding custom claims to accesstoken using identityserver4 and dotnet-core 3.1
+# Integrate identityserver4 and dotnet-core 3.1
 
 # Used Technologies
 
