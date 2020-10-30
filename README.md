@@ -1,4 +1,4 @@
-# Adding custom claims to accesstoken using identityserver4 and dotnet-core 3.1
+# Integrate identityserver4 and dotnet-core 3.1
 
 # Used Technologies
 
@@ -65,4 +65,6 @@ Add following namespaces in-order to get rid of the errors.
 After that we need to modify the ConfigureServices method in Startup.cs file.
 
 ![client](./images/configureservice-v2.PNG)
+
+That's it, let's see whether it's working.
 
