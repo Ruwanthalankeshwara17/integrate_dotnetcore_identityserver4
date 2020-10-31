@@ -73,4 +73,4 @@ Finally modify the ConfigureServices method in Startup.cs file.
 
 That's it, time for testing.
 
-First visit the discovery document (https://localhost:5001/.well-known/openid-configuration) and check the 'scopes_supported' and 'claims_supported'. Supported scopes include 'api.read', 'api.write' and 'role' while supported claims contains the custom claim 'role' as well.
+First visit the discovery document (https://localhost:5000/.well-known/openid-configuration) and check the 'scopes_supported' and 'claims_supported'. Supported scopes include 'api.read', 'api.write' and 'role' while supported claims contains the custom claim 'role' as well.
