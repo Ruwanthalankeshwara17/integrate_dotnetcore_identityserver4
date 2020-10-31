@@ -41,17 +41,25 @@ Clients
 
 Let IdentityServrer know which clients have access to it. Here the Client Credentials grant type is used. Allowed scopes defines the allowed list of permissions which the client can request from IdentityServer.
 
+![client](./images/client.PNG)
+
 Identity Resources.
 
 Identity resource allows client to view subset of claims about user. Here first 3 are standard OpenId Connect scopes while the last one is a custom identity resource 'role'.
 
+![identity-resource](./images/identity-resource.PNG)
+
 Api Resources,
 
-An Api resource defines one Api that IdentityServer protects. 
+An Api resource defines one Api that IdentityServer protects.
+
+![api-resources](./images/api-resources.PNG)
 
 Api Scopes
 
 An API scope defines individual authorization level on an API that client application can request. In this case scopes are api.read and api.write.
+
+![scopes](./images/scopes.PNG)
 
 Users.
 
