@@ -16,21 +16,10 @@
 
 Configure Identity Server
 
-Create new project using VisualStudio2019 IDE.
+Create new Asp.Net Core Web Application project using VisualStudio2019 IDE. After that select empty template and make sure the ‘Configure for HTTPS’ is ticked. 
+Same can be achieved by executing the follwing command. 'dotnet run web'
 
-![create-project](./images/create-project.jpg)
-
-Select Asp.Net Core Web Application.
-
-![select-webapp](./images/select-webapp.jpg)
-
-Give a name and select a location. After that select empty template and remove tick ‘Configure for HTTPS’.
-
-![empty-template](./images/http-empty.jpg)
-
-Remove IIS profile from launchSettings.json file.
-
-![launch-settings](./images/launchsettings.jpg)
+Remove IIS profile from launchSettings.json file. Then change the 'applicationurl' to https://localhost:5000.
 
 Install IdentityServer4 package.
 
