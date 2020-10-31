@@ -23,15 +23,17 @@ Remove IIS profile from launchSettings.json file. Then change the 'applicationur
 
 Install IdentityServer4 package.
 
-![launch-settings](./images/identityserver4.PNG)
+![idebtity-server-4](./images/identityserver4.PNG)
 
 After that installation, IdentityServer need to be added to application by modifying the ConfigureServices method in Startup.cs file.
 
-![launch-settings](./images/configureservice.PNG)
+![configure-service](./images/configureservice.PNG)
 
-Additionally, IdentityServer need to be added to the request pipeline by modifying the Configure method in Startup.cs file.
+Above of code will register the IdentityServer4 in Dependancy Injection Container.
 
-![launch-settings](./images/configure.PNG)
+![configure](./images/configure.PNG)
+
+Additionally, IdentityServer need to be added to the request pipeline by modifying the Configure method in Startup.cs file. By doing so IdentityServer start handling the OAuth and OpenId Connect requests.
 
 Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Config.cs' inside that folder.
 
