@@ -14,10 +14,8 @@
 
 # Getting Started
 
-Configure Identity Server
-
 Create new Asp.Net Core Web Application project using VisualStudio2019 IDE. After that select empty template and make sure the ‘Configure for HTTPS’ is ticked. 
-Same can be achieved by executing the follwing command. 'dotnet run web'
+Same can be achieved by executing the follwing command 'dotnet run web'
 
 Remove IIS profile from launchSettings.json file. Then change the 'applicationUrl' to https://localhost:5000.
 
@@ -75,3 +73,4 @@ Finally modify the ConfigureServices method in Startup.cs file.
 
 That's it, time for testing.
 
+First visit the discovery document and check the 'scopes_supported' and 'claims_supported'. Supported scopes include 'api.read', 'api.write' and 'role' while supported claims contains the custom claim 'role' as well.
