@@ -10,7 +10,7 @@
 1. Checkout the code.
 2. Open a cmd inside the folder where you cloned the code.
 3. Run 'dotnet run --project ./Identity.csproj' or 'dotnet run'
-4. Open a browser and type 'http://localhost:5000'
+4. Open a browser and type 'https://localhost:5000'
 
 # Getting Started
 
@@ -19,7 +19,7 @@ Configure Identity Server
 Create new Asp.Net Core Web Application project using VisualStudio2019 IDE. After that select empty template and make sure the ‘Configure for HTTPS’ is ticked. 
 Same can be achieved by executing the follwing command. 'dotnet run web'
 
-Remove IIS profile from launchSettings.json file. Then change the 'applicationurl' to https://localhost:5000.
+Remove IIS profile from launchSettings.json file. Then change the 'applicationUrl' to https://localhost:5000.
 
 Install IdentityServer4 package.
 
@@ -67,11 +67,11 @@ Users.
 
 Add following namespaces in-order to get rid of the errors.
 
-![client](./images/using-config.cs.PNG)
+![using](./images/using-config.cs.PNG)
 
-After that we need to modify the ConfigureServices method in Startup.cs file.
+Finally modify the ConfigureServices method in Startup.cs file.
 
-![client](./images/configureservice-v2.PNG)
+![configureservice-v2](./images/configureservice-v2.PNG)
 
-That's it, let's see whether it's working.
+That's it, time for testing.
 
