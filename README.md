@@ -37,17 +37,25 @@ Additionally, IdentityServer need to be added to the request pipeline by modifyi
 
 Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Config.cs' inside that folder.
 
-Now add Identity Resources.
+Clients
 
-![identity-resources](./images/identityresources.PNG)
+Let IdentityServrer know which clients have access to it. Here the Client Credentials grant type is used. Allowed scopes defines the allowed list of permissions which the client can request from IdentityServer.
 
-Add Users.
+Identity Resources.
+
+Identity resource allows client to view subset of claims about user. Here first 3 are standard OpenId Connect scopes while the last one is a custom identity resource 'role'.
+
+Api Resources,
+
+An Api resource defines one Api that IdentityServer protects. 
+
+Api Scopes
+
+An API scope defines individual authorization level on an API that client application can request. In this case scopes are api.read and api.write.
+
+Users.
 
 ![users](./images/users.PNG)
-
-Add client.
-
-![client](./images/clients.PNG)
 
 Add following namespaces in-order to get rid of the errors.
 
