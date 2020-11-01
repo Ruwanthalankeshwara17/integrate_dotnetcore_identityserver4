@@ -35,31 +35,31 @@ Additionally, IdentityServer need to be added to the request pipeline by modifyi
 
 Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Config.cs' inside that folder.
 
-Clients
+# Clients
 
 Let IdentityServrer know which clients have access to it. Here the Client Credentials grant type is used. Allowed scopes defines the allowed list of permissions which the client can request from IdentityServer. Please change the password to a strong one.
 
 ![client](./images/client.PNG)
 
-Identity Resources.
+# Identity Resources.
 
 Identity resource allows client to view subset of claims about user. Here first 3 are standard OpenId Connect scopes while the last one is a custom identity resource 'role'.
 
 ![identity-resource](./images/identity-resource.PNG)
 
-Api Resources,
+# Api Resources,
 
 An Api resource defines one Api that IdentityServer protects.
 
 ![api-resources](./images/api-resources.PNG)
 
-Api Scopes
+# Api Scopes
 
 An API scope defines individual authorization level on an API that client application can request. In this case scopes are api.read and api.write.
 
 ![scopes](./images/scopes.PNG)
 
-Users.
+# Users.
 
 ![users](./images/users.PNG)
 
@@ -85,7 +85,7 @@ Finally decode the token to see the claims using jwt.io.
 
 Now create a web api project from visual studio IDE or using following command 'dotnet web api'. Add the following package to the project.
 
-![accesstoken-validation](./images/accesstoken validation.PNG)
+![accesstoken-validation](./images/accesstoken-validation.PNG)
 
 Then add following to api's ConfigureServices method.
 
