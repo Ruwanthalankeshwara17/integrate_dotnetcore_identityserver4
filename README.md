@@ -77,10 +77,10 @@ First visit the discovery document (https://localhost:5000/.well-known/openid-co
 
 Next try to grab an access token through postman by filling the values shown in the image. 
 
-![postman](./images/configureservice-v2.PNG)
+![postman](./images/postman.PNG)
 
 Finally decode the token to see the claims using jwt.io.
 
-![jwt](./images/configureservice-v2.PNG)
+![jwt](./images/jwt.PNG)
 
 
