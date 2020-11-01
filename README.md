@@ -83,7 +83,11 @@ Finally decode the token to see the claims using jwt.io.
 
 ![jwt](./images/jwt.PNG)
 
-Now create a web api project from visual studio IDE or using following command 'dotnet web api'. Then add following to api's ConfigureServices method.
+Now create a web api project from visual studio IDE or using following command 'dotnet web api'. Add the following package to the project.
+
+![accesstoken-validation](./images/jwt.PNG)
+
+Then add following to api's ConfigureServices method.
 
 ![api-configure-services](./images/jwt.PNG)
 
