@@ -15,7 +15,7 @@
 # Getting Started
 
 Create new Asp.Net Core Web Application project using VisualStudio2019 IDE. After that select empty template and make sure the ‘Configure for HTTPS’ is ticked. 
-Same can be achieved by executing the follwing command 'dotnet run web'
+Same can be achieved by executing the follwing command 'dotnet new web -n <Give a name>'
 
 Remove IIS profile from launchSettings.json file. Then change the 'applicationUrl' to https://localhost:5000.
 
@@ -83,7 +83,7 @@ Finally decode the token to see the claims using jwt.io.
 
 ![jwt](./images/jwt.PNG)
 
-Now create a web api project from visual studio IDE or using following command 'dotnet web api'. Add the following package to the project.
+Now create a web api project from visual studio IDE or using following command 'dotnet new webapi -n <Give a name>'. Add the following package to the project.
 
 ![accesstoken-validation](./images/accesstoken-validation.PNG)
 
