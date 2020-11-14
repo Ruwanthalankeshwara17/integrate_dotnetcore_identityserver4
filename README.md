@@ -1,18 +1,18 @@
 # Integrate identityserver4 and dotnet-core 3.1
 
-# Used Technologies
+## Used Technologies
 
 1. dotnetcore 3.1
 2. IdentityServer4
 
-# Quick Started
+## Quick Started
 
 1. Checkout the code.
 2. Open a cmd inside the folder where you cloned the code.
 3. Run 'dotnet run --project ./Identity.csproj' or 'dotnet run'
 4. Open a browser and type 'https://localhost:5000'
 
-# Getting Started
+## Getting Started
 
 Create new Asp.Net Core Web Application project using VisualStudio2019 IDE. After that select empty template and make sure the ‘Configure for HTTPS’ is ticked. 
 Same can be achieved by executing the follwing command 'dotnet new web -n Identity'
@@ -35,31 +35,31 @@ Additionally, IdentityServer need to be added to the request pipeline by modifyi
 
 Next step is to add configurations related to Users, Clients, IdentityResources etc. For that new folder 'Configuration' need to be added to the solution at the root level. Then create a class 'Config.cs' inside that folder.
 
-# Clients
+### Clients
 
 Let IdentityServrer know which clients have access to it. Here the Client Credentials grant type is used. Allowed scopes defines the allowed list of permissions which the client can request from IdentityServer. Please change the password to a strong one.
 
 ![client](./images/client.PNG)
 
-# Identity Resources.
+### Identity Resources.
 
 Identity resource allows client to view subset of claims about user. Here first 3 are standard OpenId Connect scopes while the last one is a custom identity resource 'role'.
 
 ![identity-resource](./images/identity-resource.PNG)
 
-# Api Resources,
+### Api Resources,
 
 An Api resource defines one Api that IdentityServer protects.
 
 ![api-resources](./images/api-resources.PNG)
 
-# Api Scopes
+### Api Scopes
 
 An API scope defines individual authorization level on an API that client application can request. In this case scopes are api.read and api.write.
 
 ![scopes](./images/scopes.PNG)
 
-# Users.
+### Users.
 
 ![users](./images/users.PNG)
 
