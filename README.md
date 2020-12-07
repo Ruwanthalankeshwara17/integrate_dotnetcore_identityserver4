@@ -8,7 +8,7 @@
 ## Quick Started
 
 1. Checkout the code.
-2. Open a cmd inside the folder where you cloned the code.
+2. Open a cmd inside the 'identity' folder where you cloned the code.
 3. Run 'dotnet run --project ./Identity.csproj' or 'dotnet run'
 4. Open a browser and type 'https://localhost:5000'
 
